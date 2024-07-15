@@ -10,6 +10,8 @@ echo:
 	@echo ${LABEL}
 build:
 	@docker build . -t ${TAG}
+push:
+	@docker push ${TAG}	
 shell:
 	@docker run -it --rm --name ${LABEL} --mount type=bind,source=${DIR}/src,target=/app/ --entrypoint /bin/bash ${TAG}
 ## debug
