@@ -1,0 +1,14 @@
+Grafana::DS Mysql
+
+Validador de objeto::
+class Office:
+    def stamp(artefato):        
+        artefato = {
+        'data' : artefato['data'],
+        'temperatura' : artefato['temperatura'],
+        'local' : artefato['local']
+        }
+        if artefato['data'] == None or artefato['temperatura'] == None or artefato['local'] == None:
+            KeyError
+        else:
+            return artefato   
