@@ -2,6 +2,7 @@
 common
 
 ## Inventário::
+```shell
 CREATE TABLE temperatura (
     id int NOT NULL AUTO_INCREMENT,
     data  DATETIME NOT NULL,
@@ -9,3 +10,4 @@ CREATE TABLE temperatura (
     local varchar(255) NOT NULL,
     PRIMARY KEY (id)
 );
+```
